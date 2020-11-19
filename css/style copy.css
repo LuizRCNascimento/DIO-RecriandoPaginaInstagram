@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    background-color: rgb(250 , 250, 250);
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    justify-content: center;
+
+    /* viewport-fit: 1024 1366; */
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Textos com cor azul */
+span { 
+    color: rgb(0 , 149,246);
+    background-color: white;
+}
+
+p {
+    color: rgb(150, 150, 150);
+    padding: 1mm 1mm;
+    background-color: white;
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}       
+
+.instagram-phone img {
+    min-width: 60mm;
+    margin: 0 20px 0 0; /* distancia entre blocos*/
+} 
+
+.instagram-interface {
+    display: flex;
+    /* padding: 0px 0px 0px 25px;  */
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    min-width: 75mm;
+    min-height: 100mm;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border: solid 1px rgb(220, 220, 220);
+}
+
+.group:nth-child(2) {
+    padding: 5mm 0mm;
+    margin: 1mm 0mm;
+}
+
+.InstagramLogo {
+    display: flex;
+    justify-content: center;
+    width: 40mm;
+}
+
+.fotoperfil {
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;        
+    overflow: hidden;
+    height: 18mm;
+}
+
+.texto_continua {
+    background-color:rgb(0 , 149 , 246);
+    border-radius: 4px;
+    min-width: 48mm;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    line-height: 18px;
+    padding: 5px 9px; /* borda azul  */
+    margin: 5mm;
+}
+
+.texto_remover {
+    color: rgb(0 , 149,246);
+    margin-bottom: 18px;
+    /* margin: 0 0 10px; */
+}
+
+.get-app {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3mm;
+}
+
+.app {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    /* width: 100vw; */
+}
+
+
+.app-url {
+    height: 8mm;
+    width: 27mm;
+    background-size: cover;
+}
+
+.app-url:nth-child(1) {
+    background-image: url(../image/LogoAppStoreApple.png);
+}
+
+.app-url:nth-child(2) {
+    background-image: url(../image/LogoGooglePlayStore.png);
+}
+
+
+@media (max-width:875px) {
+    
+    .instagram-phone img {
+        display: none;
+    }
+}
+
+@media (max-width:450px) {
+    
+    .instagram-wrapper {
+        display: none;
+    }
+}
